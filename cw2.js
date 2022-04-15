@@ -1,13 +1,9 @@
-// let last = function returnLastElementN(array, n) {
-//     if (array == null)
-//     return void 0;
-//     if (n == null)
-//     return array[array.length - 1];
-//     return array.slice(Math.max(array.length - n, 0));
-//     };
-//     console.log(last([7, 9, 0, -2]));
-//     console.log(last([7, 9, 0, -2],3));
-//     console.log(last([7, 9, 0, -2],6));
+// Write a simple JavaScript program to join all elements of the following array into a string.
+// Sample array : myColor = ["Red", "Green", "White", "Black"];
+// Expected Output :
+// "Red,Green,White,Black"
+// "Red,Green,White,Black"
+// "Red+Green+White+Black"
 
 myColor = ["Red", "Green", "White", "Black"];
 console.log(myColor.toString());
