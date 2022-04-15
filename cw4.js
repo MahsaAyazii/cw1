@@ -25,9 +25,19 @@
 //  let dataConcat = data.map(item=>item.reduce((a,i)=>`${a} ${i}`))
 // console.log (dataConcat)
 
+// function ConcatenatingUnevenArrays(arr) {
+//     arr.map(function (item, index) {
+//     console.log(`" ${arr[index]}" \n`);
+//     })
+//     }
+
 function ConcatenatingUnevenArrays(arr) {
     arr.map(function (item, index) {
-    console.log(`" ${arr[index]}" \n`);
+    const newItem = item.reduce(function(acc,i){
+    acc += " "+ i;
+    return acc;
+    } )
+    console.log(newItem);
     })
     }
     ConcatenatingUnevenArrays([
