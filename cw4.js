@@ -16,11 +16,22 @@
 
 
 
-let data = [
-    ["The","red", "horse"],
-    ["Plane","over","the","ocean"],
-    ["Chocolate","ice","cream","is","awesome"], 
-    ["this","is","a","long","sentence"]
-  ]
- let dataConcat = data.map(item=>item.reduce((a,i)=>`${a} ${i}`))
-console.log (dataConcat)
+// let data = [
+//     ["The","red", "horse"],
+//     ["Plane","over","the","ocean"],
+//     ["Chocolate","ice","cream","is","awesome"], 
+//     ["this","is","a","long","sentence"]
+//   ]
+//  let dataConcat = data.map(item=>item.reduce((a,i)=>`${a} ${i}`))
+// console.log (dataConcat)
+
+function ConcatenatingUnevenArrays(arr) {
+    arr.map(function (item, index) {
+    console.log(`" ${arr[index]}" \n`);
+    })
+    }
+    ConcatenatingUnevenArrays([
+    ["The", "red", "horse"],
+    ["Plane", "over", "the", "ocean"],
+    ["Chocolate", "ice", "cream", "is", "awesome"],
+    ["this", "is", "a", "long", "sentence"]]);
